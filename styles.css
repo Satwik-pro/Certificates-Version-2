@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    background-image: url(https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+/*********************** Mobile first layout *********************/
+h1{
+    margin-left: 1.5%;
+}
+
+.container img{
+
+    display: block;
+    width: 80vw;
+    height: 300px;
+    margin-bottom: 1rem;
+    
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.backdrop{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.767); 
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.full_img{
+    position: fixed;
+    display: none;
+    z-index: 200;
+    height: 70%;
+    width: 100%;
+    left: 10%;
+    top: 10%;
+
+}
+
+  .full_img img{
+    height: 100%;
+    width:100%;
+
+}  
+
+/***************************** MEDIA QUERIES ***********************************/
+
+
+/**** Desktop/Laptop *******/ 
+
+@media (min-width : 813px) {
+/* STYLES GO HERE */
+
+body{
+    margin: 70px;
+}
+
+h1{
+    margin-left: 1.5%;
+}
+
+
+.container img{
+    width: 17%;
+    float: left;
+    margin: 1.5%;
+    height: 30vh; 
+    
+}
+img:hover {
+    cursor: pointer;
+}
+
+.backdrop{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.767); 
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.full_img{
+    position: fixed;
+    display: none;
+    z-index: 200;
+    height: 85%;
+    width: 100%;
+    left: 20%;
+
+}
+  .full_img img{
+    height: 100%;
+    width:100%;
+
+}  
+}
+
+/****** Phones/Tablet landscape mode ******/
+
+@media (max-width: 812px) and (min-width:640px){
+
+
+    .container img{
+        width: 21%;
+        float: left;
+        margin: 1.5%;
+        height: 30vh; 
+        
+    }
+
+    .full_img{
+    position: fixed;
+    display: none;
+    z-index: 200;
+    height: 75%;
+    width: 65%;
+    left: 15%;
+
+    }
+.full_img img{
+    height: 100%;
+    width:100%;
+
+   } 
+}
